@@ -9,7 +9,7 @@ const Foodpage =async () => {
     const data = await res.json()
    const foods = data.data
 
-   console.log(foods);
+  
 
    
 
@@ -17,7 +17,7 @@ const Foodpage =async () => {
     
     return (
         <div>
-            <h2 className=' text-4xl'> Foods Leanght  {foods.length} </h2>
+            <h2 className=' my-5 text-4xl text-center font-bold text-gray-300'>  Total Foods : {foods.length} </h2>
 
             <div className='grid grid-cols-3 gap-3 mt-5'>
                 {foods.map(food => <FoodCrad key={food.id} food={food} />)}   
